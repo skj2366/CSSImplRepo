@@ -1,0 +1,9 @@
+{
+  "name": "CSSImplement",
+  "version": "1.0.0",
+  "description": "css implement and pratice",
+  "main": "index.js",
+  "repository": "https://github.com/skj2366/CSSImplRepo.git",
+  "author": "DongKeun1 <skj2366@naver.com>",
+  "license": "MIT"
+}
