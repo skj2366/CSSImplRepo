@@ -25,6 +25,10 @@ body {
     position: absolute;
 }
 
+.n_button:active {
+    box-shadow: inset 5px 5px 3px #5d3c48, inset -5px -5px 3px #c77e98;
+}
+
 .n_button_click {
     /* background: #925d70; */
     box-shadow: inset 5px 5px 3px #5d3c48, inset -5px -5px 3px #c77e98;
