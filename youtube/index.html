@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Youtube Practice</title>
+    <script src="https://kit.fontawesome.com/0ad50b0352.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fas fa-bars"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+      <video autoplay muted controls src="./video/starttttt.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#a</li>
+            <li>#b</li>
+            <li>#c</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다
+            </span>
+            <button id="moreBtn" class="moreBtn" onclick="toggleMoreBtn()">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">1M views 1 month ago</span>
+        </div>
+        <!-- Action -->
+        <ul class="actions">
+          <li>
+            <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+          </li>
+        </ul>
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./image/1.jpg" alt="" />
+            <div class="info">
+              <span class="name">그니</span>
+              <span class="subscribers">1M subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <!-- Up Next -->
+      <section class="up-next">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="./image/thumnail.png" alt="" /></div>
+            <div class="info">
+              <span class="title">제목1</span>
+              <span class="name">석정</span>
+              <span class="views">82k views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/thumnail.png" alt="" /></div>
+            <div class="info">
+              <span class="title">제목2</span>
+              <span class="name">석정</span>
+              <span class="views">82k views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/thumnail.png" alt="" /></div>
+            <div class="info">
+              <span class="title">제목3</span>
+              <span class="name">석정</span>
+              <span class="views">82k views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
