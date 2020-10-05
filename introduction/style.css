@@ -11,6 +11,7 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 header {
@@ -45,20 +46,40 @@ a {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 2rem;
   margin-left: 30px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .nav__list {
   margin-right: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .nav__list li a {
+  margin: 0 20px;
   font-size: 1rem;
   color: var(--white);
+}
+
+.nav__list li a:hover {
+  color: rgb(223, 142, 84);
+}
+
+.toggle_btn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 32px;
+}
+
+.toggle_btn:hover {
+  color: rgb(223, 142, 84);
 }
 
 .test {
@@ -106,7 +127,7 @@ a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2rem;
   /* color: white;
   border-bottom: 1px solid white; */
 }
@@ -127,7 +148,7 @@ a {
   width: 100%;
   /* flex-basis: 1; */
   color: white;
-  font-size: 40px;
+  font-size: 2rem;
   text-shadow: 4px 2px 2px gray;
   padding: 0 40px;
 }
@@ -190,25 +211,60 @@ section .contents_wrap > div:last-child {
 
 @media (max-width: 1024px) {
   .logo {
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
     font-size: 2vw;
   }
 
   .nav__list {
     margin-right: 15px;
   }
+
   .nav__list li a {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
   .logo {
-    font-size: 1rem;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 30px;
+    width: 100%;
+    flex-basis: 4;
+  }
+
+  nav {
+    flex-basis: 1;
+  }
+
+  .logo span {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .nav__list {
+    display: none;
   }
 
   .nav__list li a {
     font-size: 0.5rem;
+  }
+
+  .toggle_btn {
+    top: 1.5rem;
+    display: block;
+  }
+
+  .footer {
+    height: 5rem;
+  }
+
+  .footer .copyright {
+    font-size: 1.8rem;
   }
 }
